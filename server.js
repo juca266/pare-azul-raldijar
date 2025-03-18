@@ -66,7 +66,7 @@ const enviarNotificacao = async (formattedData) => {
 };
 
 const consultaNotificacoes = async () => {
-    const placas = ["AWX3144", "SLF8F84"];
+    const placas = ["AWX3144", "SFL8F84"];
     const estados = ['TOLERANCIA', 'ABERTA', 'PAGA', 'CANCELADA'];  // Filtra pelos estados
 
     const data = JSON.stringify({
