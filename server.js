@@ -42,7 +42,7 @@ const enviarNotificacao = async (formattedData) => {
     `;
 
     const data = JSON.stringify({
-        "destination": "120363356974119067@g.us",
+        "destination": "120363415932573213@g.us",
         "data": formattedText.trim(),
         "imageUrl": `${formattedData.imagens}`
     });
@@ -66,7 +66,7 @@ const enviarNotificacao = async (formattedData) => {
 };
 
 const consultaNotificacoes = async () => {
-    const placas = ["BES6G80", "FBA3F85"];
+    const placas = ["AWX3144", "SLF8F84"];
     const estados = ['TOLERANCIA', 'ABERTA', 'PAGA', 'CANCELADA'];  // Filtra pelos estados
 
     const data = JSON.stringify({
