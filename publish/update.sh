@@ -6,13 +6,13 @@ docker rmi -f ${image}
 docker rmi -f juca266/${image}
 
 echo "Buildar nova imagem..."
-docker build -t ${image} /home/fbdomingos/developer/${image}/
+docker build -t ${image} /home/viptech/Junior/${image}/
 
 echo "publicar no Hub..."
 docker tag ${image}:latest juca266/${image}:latest
 docker push juca266/${image}:latest
 
 echo "subir o sistema..."
-kubectl delete -f /home/fbdomingos/developer/${image}/publish/${image}.yaml
-kubectl apply -f /home/fbdomingos/developer/${image}/publish/${image}.yaml
-kubectl apply -f /home/fbdomingos/developer/${image}/publish/service-${image}.yaml
+kubectl delete -f /home/viptech/Junior/${image}/publish/${image}.yaml
+kubectl apply -f /home/viptech/Junior/${image}/publish/${image}.yaml
+kubectl apply -f /home/viptech/Junior/${image}/publish/service-${image}.yaml
